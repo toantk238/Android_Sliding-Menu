@@ -54,6 +54,7 @@ public class BaseSlidingMenuActivity extends AppCompatActivity {
         mLeftDrawer = findViewById(R.id.left_drawer);
         mRightDrawer = findViewById(R.id.right_drawer);
         mContentView = findViewById(R.id.content_layout);
+        // Just ignore a bug view after the activity re-created
         mDrawerLayout.post(new Runnable() {
             @Override
             public void run() {
